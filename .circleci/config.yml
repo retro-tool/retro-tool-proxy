@@ -10,8 +10,6 @@ workflows:
     jobs:
       - build:
           context: docker-login
-          requires:
-            - test
           filters:
             branches:
               only:
